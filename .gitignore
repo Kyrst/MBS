@@ -1,0 +1,5 @@
+/node_modules
+/uploads
+/vendor
+.DS_Store
+composer.lock

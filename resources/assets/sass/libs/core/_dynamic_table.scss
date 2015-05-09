@@ -1,0 +1,40 @@
+#dynamic_table
+{
+	margin-top: 0;
+
+	tbody td
+	{
+		height: 49px;
+	}
+}
+
+#dynamic_table_toolbar
+{
+	margin-bottom: 18px;
+}
+
+#dynamic_table_info_row
+{
+	height: 49px;
+	margin-right: 0;
+	margin-bottom: 0;
+
+	.column
+	{
+		padding-bottom: 0;
+	}
+}
+
+#dynamic_table_page_info_container
+{
+	p
+	{
+		margin-top: 6px;
+	}
+}
+
+#dynamic_table_search_container
+{
+	text-align: right;
+	padding: 0;
+}

@@ -1,0 +1,48 @@
+@import '../../../colors';
+
+.dz-drag-hover
+{
+	@include x-transition(background-color .1s linear);
+
+	//background-color: darken(#E7E7E7, 5);
+	background-color: rgba(86, 79, 138, 0.75);
+}
+
+.dz-preview
+{
+	$offset: 24px;
+	$padding: 12px;
+
+	position: absolute;
+	top: $offset;
+	right: $offset - 4px;
+	width: 275px;
+	height: 135px;
+	padding: $padding ($padding + 2px);
+	background-color: #FFF;
+	font-size: .9em;
+
+	@include x-border-radius(3px);
+	@include x-box-shadow(2px 2px 2px rgba(0, 0, 0, .15));
+}
+
+.dz-image
+{
+	display: none;
+}
+
+.dz-progress
+{
+	width: 100%;
+	height: 18px;
+	background: $primary_color;
+	margin: 4px 0 0;
+	word-wrap: break-word;
+
+	@include x-border-radius(2px);
+}
+
+.dz-success-mark, .dz-error-mark
+{
+	display: none;
+}

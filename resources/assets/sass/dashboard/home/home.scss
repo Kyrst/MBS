@@ -1,0 +1,212 @@
+@import '../../libs/core/core';
+
+#home_container
+{
+	padding-bottom: 22px;
+	min-height: 450px;
+}
+
+#songs_filter_container
+{
+	margin: 0 0 6px;
+
+	.ui.floated
+	{
+		padding-top: 8px;
+	}
+
+	&.is-loading
+	{
+		visibility: hidden;
+	}
+}
+
+#songs_container
+{
+	$song_height: 56px;
+
+	padding-top: 0;
+	padding-bottom: 0;
+	//overflow: hidden;
+
+	&.is-loading
+	{
+		padding-top: 16px;
+		padding-bottom: 16px;
+
+		#songs
+		{
+			visibility: hidden;
+		}
+	}
+
+	.song
+	{
+		min-height: $song_height;
+
+		@extend %clearfix;
+
+		&.open
+		{
+			.spotify-tracks
+			{
+				display: block;
+			}
+		}
+
+		.info
+		{
+			float: left;
+			font-size: .9em;
+		}
+
+		.song-title
+		{
+			display: block;
+			font-weight: bold;
+			margin-bottom: 2px;
+		}
+
+		.song-added
+		{
+			display: block;
+			font-size: .9em;
+		}
+
+		.song-status
+		{
+			float: right;
+			margin-right: 6px;
+			padding: 9px 13px 8px;
+		}
+
+		div.song-status
+		{
+			cursor: default;
+		}
+
+		.toolbar
+		{
+			float: right;
+			font-size: .9em;
+		}
+
+		.main
+		{
+			@extend %clearfix;
+		}
+
+		.spotify-tracks
+		{
+			display: none;
+			margin-top: 5px;
+			font-size: .8em;
+		}
+
+		.play.icon, .pause.icon
+		{
+			font-size: .8em;
+		}
+
+		.spotify-track
+		{
+			margin-bottom: 3px;
+
+			&:last-child
+			{
+				margin-bottom: 0;
+			}
+		}
+
+		.this-is-it-button
+		{
+			padding: 3px 5px 4px;
+			margin-left: 4px;
+		}
+
+		.preview-player
+		{
+			cursor: pointer;
+		}
+
+		.spotify-track-name
+		{
+			color: rgba(0, 0, 0, 0.8);
+		}
+
+		.song-waveform-container
+		{
+			position: relative;
+			height: 30px;
+			margin-top: 10px;
+		}
+
+		.song-waveform-progress, .song-waveform
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 30px;
+		}
+
+		.song-waveform-progress
+		{
+			width: 100%;
+			z-index: 2;
+
+			canvas
+			{
+				position: absolute;
+				clip: rect(0, 0, 0, 0);
+
+				//@include x-transition(width .15s linear)
+			}
+		}
+
+		.song-waveform
+		{
+			width: 100%;
+			z-index: 1;
+
+			@include x-opacity(0);
+			@include x-transition(opacity .25 linear);
+
+			&.loaded
+			{
+				@include x-opacity(1);
+			}
+		}
+
+		.delete-song-button
+		{
+			color: #000;
+
+			&:focus
+			{
+				outline: none;
+			}
+		}
+
+		.version-dropdown
+		{
+			float: right;
+			margin-top: 3px;
+  			font-size: .9em;
+		}
+	}
+}
+
+.no-data
+{
+	margin: 16px 0 18px 10px;
+}
+
+#home_header
+{
+	font-size: .8em;
+}
+
+#sub_header
+{
+	font-size: .9em;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "locstor",
+  "version": "1.0.7",
+  "main": "locstor.min.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "bower.json",
+    "AUTHORS",
+    "LICENSE",
+    "TODO.md"
+  ],
+  "homepage": "https://github.com/justindeguzman/locstor",
+  "_release": "1.0.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.7",
+    "commit": "fe03cca4c27912650fab84eb0156c73adf75cac8"
+  },
+  "_source": "git://github.com/justindeguzman/locstor.git",
+  "_target": "*",
+  "_originalSource": "locstor"
+}

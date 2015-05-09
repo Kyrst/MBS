@@ -1,0 +1,16 @@
+{
+  "name": "locstor",
+  "version": "1.0.6",
+  "main": "locstor.min.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "bower.json",
+    "AUTHORS",
+    "LICENSE",
+    "TODO.md"
+  ]
+}

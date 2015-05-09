@@ -1,0 +1,27 @@
+v1.0.7
+- Added AMD support
+
+v1.0.6
+-Added method get(string key, type defaultValue)
+-Fixed bug with returning null values
+
+v1.0.5
+-Moved var ie back outside the getRemainingSpace() method
+-Moved var defaultSize outside the getRemainingSpace() method
+-Implemented a scope wrapper to prevent global namespace pollution
+
+v1.0.4
+-Moved var ie inside getRemainingSpace() method
+-Combined files VERSION and CHANGELOG
+-Placed initial support check inside a closure
+-Replaced throw 'string' with throw new Error('message')
+
+v1.0.3
+-Replaced localStorage[key] = value with localStorage.setItem(key, value)
+
+v1.0.2
+-Refactored get() method
+-Removed isJSON() method
+
+v1.0.1
+-Added initial check to see if localStorage is enabled

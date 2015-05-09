@@ -1,0 +1,91 @@
+@import '../../../public/libs/bower/sass-mixins/mixins';
+
+$segment_loading_and_error_height: 58px;
+
+.ui.segment.loading-container
+{
+	&.is-loading
+	{
+		font-size: .9em;
+	}
+
+	&.is-loading, &.error, &.no-data
+	{
+		min-height: $segment_loading_and_error_height;
+	}
+
+	&.error, &.no-data
+	{
+		padding: 0;
+		text-align: center;
+		line-height: $segment_loading_and_error_height;
+		color: #AAA;
+		font-size: .9em;
+	}
+}
+
+.no-segment-data
+{
+	display: block;
+	text-align: center;
+	color: #BBB;
+	line-height: $segment_loading_and_error_height - 3px;
+}
+
+.ui.button
+{
+	&:focus
+	{
+		@include x-box-shadow(none);
+	}
+
+	&[disabled]
+	{
+		cursor: default;
+	}
+}
+
+.ui.card.small
+{
+	width: 209px;
+
+	.image.with-padding
+	{
+		padding: 10px;
+		background-color: #FFF;
+	}
+}
+
+.ui.image-card
+{
+	.description-content
+	{
+		padding-top: 0;
+		padding-bottom: 11px;
+
+		.date
+		{
+			display: block;
+			text-align: center;
+		}
+	}
+
+	.image-card-file-input
+	{
+		visibility: hidden;
+		position: absolute;
+		top: -50;
+		left: -50;
+	}
+
+	.image-card-status-text
+	{
+		$height: 26px;
+
+		display: block;
+		font-size: .9em;
+		text-align: center;
+		height: $height;
+		line-height: $height;
+	}
+}

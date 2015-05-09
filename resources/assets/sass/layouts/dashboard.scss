@@ -1,0 +1,140 @@
+@import '../libs/semantic';
+@import '../libs/sortable';
+@import '../libs/core/core';
+
+@import '../colors';
+
+html
+{
+	overflow: -moz-scrollbars-vertical;
+	overflow: scroll;
+}
+
+a
+{
+	color: $primary_color;
+
+	&:hover
+	{
+		color: darken($primary_color, 15%);
+	}
+}
+
+.clear
+{
+	clear: both;
+}
+
+$header_height: 65px;
+
+#header
+{
+	height: $header_height;
+	line-height: $header_height;
+}
+
+h1
+{
+	margin-top: 0;
+}
+
+#breadcrumb
+{
+	margin-bottom: 14px;
+}
+
+th a
+{
+	color: rgba(0, 0, 0, .8);
+
+	&:hover
+	{
+		color: rgba(0, 0, 0, .8);
+	}
+}
+
+.checkbox-line-break
+{
+	margin: 5px 0;
+}
+
+#header_player_container
+{
+	$opacity_animation_duration: .2s;
+
+	display: inline-block;
+	margin-right: 6px;
+
+	@include x-transition(opacity $opacity_animation_duration ease-out);
+	@include x-opacity(0);
+
+	&.show
+	{
+		@include x-transition(opacity $opacity_animation_duration ease-in);
+		@include x-opacity(1);
+	}
+}
+
+#header_player_play_button,
+#header_player_stop_button
+{
+	float: left;
+}
+
+#header_player_title
+{
+	float: left;
+	margin: 0 8px 0 3px;
+}
+
+#header_player_progress
+{
+	$color: $primary_color;
+	$border_radius: 3px;
+
+	width: 100px;
+	height: 24px;
+	background-color: #F7F7F7;
+	border: none;
+	float: left;
+  	margin: 21px 8px 0 0;
+
+	&::-webkit-progress-bar
+	{
+		background-color: lightgray;
+
+		@include x-border-radius($border_radius);
+	}
+
+	&::-webkit-progress-value
+	{
+		background-color: $color;
+
+		// Rounded progress bar value
+		@include x-border-radius($border_radius);
+
+		// Straight progress bar value
+		/*-webkit-border-top-left-radius: 3px;
+		-webkit-border-bottom-left-radius: 3px;
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;*/
+	}
+}
+
+#header_dropdown, #player_form
+{
+	float: right;
+}
+
+#header_dropdown
+{
+	margin-top: 13px;
+}
+
+#header_volume
+{
+	float: left;
+	margin: 25px 12px 0 0;
+}
+
+@import 'partials/dashboard/dropzone';

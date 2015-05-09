@@ -1,0 +1,72 @@
+@import '../../../../../public/libs/bower/sass-mixins/mixins';
+
+#dynamic_tabs_container
+{
+	margin-bottom: 14px;
+
+	.tab
+	{
+		min-height: 64px;
+	}
+
+	.locked-tab-info
+	{
+		position: absolute;
+		top: 2px;
+		left: 2px;
+		width: calc(100% - 4px);
+		height: calc(100% - 4px);
+		background: rgba(255, 255, 255, .05);
+		text-align: center;
+		z-index: 1;
+
+		&:before
+		{
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+
+		span
+		{
+			display: inline-block;
+			color: #999;
+			vertical-align: middle;
+		}
+	}
+
+	.locked-tab-content
+	{
+		@include x-opacity(.2);
+	}
+
+	.image-card-status-text
+	{
+		display: none;
+	}
+}
+
+#dynamic_item_tabs
+{
+	.item
+	{
+		&.locked
+		{
+			color: #CCC;
+		}
+	}
+}
+
+#dynamic_item_form_loader
+{
+	display: none;
+}
+
+#dynamic_item_form
+{
+	.ui.card
+	{
+		margin-top: 6px;
+	}
+}

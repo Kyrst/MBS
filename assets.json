@@ -1,0 +1,194 @@
+{
+	"libraries":
+	{
+		"normalize-css":
+		{
+			"css": "libs/bower/normalize-css/normalize.css"
+		},
+		"semantic":
+		{
+			"css": "libs/bower/semantic/dist/semantic.css",
+			"js": "libs/bower/semantic/dist/semantic.js"
+		},
+		"sweetalert":
+		{
+			"css": "libs/bower/sweetalert/lib/sweet-alert.css",
+			"js": "libs/bower/sweetalert/lib/sweet-alert.js"
+		},
+		"core":
+		{
+			"js": "libs/core/core.min.js"
+		},
+		"jquery-validation":
+		{
+			"js": "libs/bower/jquery-validation/dist/jquery.validate.min.js"
+		},
+	  	"perspective":
+		{
+		  "js":
+		  [
+			"libs/perspective/js/modernizr.custom.25376.js",
+			"libs/perspective/js/classie.js",
+			"libs/perspective/js/menu.js"
+		  ],
+		  "css": "libs/perspective/css/component.css"
+		},
+		"livestampjs":
+		{
+			"js":
+			[
+				"libs/bower/moment/moment.js",
+				"libs/bower/livestampjs/livestamp.min.js"
+			]
+		},
+	  	"swiper":
+		{
+		  "js":"libs/bower/swiper/dist/js/swiper.min.js",
+		  "css":"libs/bower/swiper/dist/css/swiper.min.css"
+		},
+	  	"jquery-mobile":
+	  	{
+			"js":"libs/jquery-mobile-custom/jquery.mobile.custom.min.js"
+	  	},
+	  	"feather-light" :
+		{
+		  "js" : "libs/bower/featherlight/release/featherlight.min.js",
+		  "css" : "libs/bower/featherlight/release/featherlight.min.css"
+		},
+	  	"jquery-ui" :
+		{
+			"js": "libs/jquery-ui-custom/jquery-ui.min.js",
+			"css": [
+		  		"libs/jquery-ui-custom/jquery-ui.structure.min.css",
+		  		"libs/jquery-ui-custom/jquery-ui.min.css"
+			]
+	  	},
+	  	"isotope" :
+		{
+		  "js" :
+		  [
+			"libs/bower/isotope/dist/isotope.pkgd.min.js"
+		  ]
+		},
+		"imagesloaded":
+		{
+			"js": "libs/bower/imagesloaded/imagesloaded.pkgd.min.js"
+		},
+		"colorbox":
+		{
+			"css": "libs/bower/jquery-colorbox/example3/colorbox.css",
+			"js": "libs/bower/jquery-colorbox/jquery.colorbox-min.js"
+		},
+		"jReject":
+		{
+			"css" : "libs/jReject/css/jquery.reject.css",
+			"js" : "libs/jReject/js/jquery.reject.js"
+		},
+		"Sortable":
+		{
+			"js": "libs/bower/Sortable/Sortable.min.js"
+		},
+		"imagesloaded" : {
+			"js" : "libs/bower/imagesloaded/imagesloaded.pkgd.min.js"
+		},
+		"hoverdir" : {
+			"js" : "libs/hoverdir/jquery.hoverdir.js"
+		},
+		"noty":
+		{
+			"js": "libs/bower/noty/js/noty/packaged/jquery.noty.packaged.min.js"
+		},
+		"buzz":
+		{
+			"js": "libs/bower/buzz/dist/buzz.min.js"
+		},
+		"animate.css":
+		{
+			"css": "libs/bower/animate.css/animate.min.css"
+		},
+		"dropzone":
+		{
+			"js": "libs/bower/dropzone/dist/dropzone.js"
+		},
+		"waveform":
+		{
+			"js": "libs/waveform/waveform.js"
+		},
+		"locstor":
+		{
+			"js": "libs/bower/locstor/locstor.min.js"
+		}
+	},
+	"pages":
+	{
+		"all":
+		{
+			"libraries":
+			[
+				"semantic",
+				"sweetalert",
+				"core",
+				"imagesloaded"
+			]
+		},
+		"front":
+		{
+			"libraries":
+			[
+				"normalize-css"
+			]
+		},
+		"dashboard":
+		{
+			"libraries":
+			[
+				"livestampjs",
+				"noty",
+				"buzz",
+				"animate.css",
+				"dropzone",
+				"waveform",
+				"locstor"
+			]
+		},
+		"dashboard/home_page/image_slider":
+		{
+			"actions":
+			{
+				"imageSlider":
+				{
+					"libraries":
+					[
+						"Sortable"
+					]
+				}
+			}
+		},
+		"dashboard/work/services":
+		{
+			"actions":
+			{
+				"dynamicItem":
+				{
+					"libraries":
+					[
+						"Sortable"
+					]
+				}
+			}
+		},
+		"dashboard/work/clients":
+		{
+			"actions":
+			{
+				"dynamicItem":
+				{
+					"libraries":
+					[
+						"Sortable"
+					]
+				}
+			}
+		}
+	}
+}

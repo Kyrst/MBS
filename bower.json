@@ -1,0 +1,24 @@
+{
+	"name": "Core",
+	"dependencies":
+	{
+		"jquery": "latest",
+		"jquery-legacy": "jquery#1",
+		"normalize-css": "latest",
+		"sass-mediaqueries": "latest",
+		"sass-mixins": "latest",
+		"semantic": "latest",
+		"sweetalert": "latest",
+		"livestampjs": "latest",
+	  	"isotope": "latest",
+	  	"moment": "latest",
+	  	"imagesloaded": "latest",
+	  	"jquery-colorbox": "latest",
+	  	"Sortable": "latest",
+	  	"noty": "latest",
+	  	"buzz": "latest",
+	  	"animate.css": "latest",
+	  	"dropzone": "latest",
+	  	"locstor": "latest"
+	}
+}
